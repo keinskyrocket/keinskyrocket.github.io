@@ -6,25 +6,25 @@
   <meta charset="UTF-8">
   <link href="styles/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900" rel='stylesheet' type='text/css'>
-
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <div class="inner">
+  <header class="inner">
+    <div>
       <h1 class="website-title">Keisuke's blog</h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="bg-secondary">
       <div class="inner">
         <div class="">
           <p>Write a consice description about this website.</p>
@@ -34,69 +34,88 @@
 
     <section>
       <div class="inner">
-        <article>
-          <a href="#">
-            <img src="#" alt="#" />
-          </a>
-          <div>
-            <h2>{#title} - {#ddmmyyyy}</h2>
-            <div><span><a href="#">{#tags}</a></span></div>
-            <p>{#excerpt} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-              eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus.</p>
-            <a href="#">{#Read more}</a>
-          </div>
-        </article>
-        <article>
-          <a href="#">
-            <img src="#" alt="#" />
-          </a>
-          <div>
-            <h2>{#title} - {#ddmmyyyy}</h2>
-            <div><span><a href="#">{#tags}</a></span></div>
-            <p>{#excerpt} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-              eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus.</p>
-            <a href="#">{#Read more}</a>
-          </div>
-        </article>
-        <article>
-          <a href="#">
-            <img src="#" alt="#" />
-          </a>
-          <div>
-            <h2>{#title} - {#ddmmyyyy}</h2>
-            <div><span><a href="#">{#tags}</a></span></div>
-            <p>{#excerpt} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-              eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus.</p>
-            <a href="#">{#Read more}</a>
-          </div>
-        </article>
-        <article>
-          <a href="#">
-            <img src="#" alt="#" />
-          </a>
-          <div>
-            <h2>{#title} - {#ddmmyyyy}</h2>
-            <div><span><a href="#">{#tags}</a></span></div>
-            <p>{#excerpt}</p>
-            <a href="#">{#Read more}</a>
-          </div>
-        </article>
+        <div class="cards">
+          <article class="card">
+            <a href="#">
+              <img src="#" alt="#" />
+            </a>
+            <div>
+              <h2>{#title} - {#ddmmyyyy}</h2>
+              <div class="icon tags fa-xs"><span class="tag-post">Sprint 1</span></div>
+              <p>{#excerpt} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus.</p>
+              <a class="btn btn-outline" href="#">{#Read more}</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="#">
+              <img src="#" alt="#" />
+            </a>
+            <div>
+              <h2>{#title} - {#ddmmyyyy}</h2>
+              <div><span><a class="tag-post" href="#">{#tags}</a></span></div>
+              <p>{#excerpt} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus.</p>
+              <a class="btn btn-outline" href="#">{#Read more}</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="#">
+              <img src="#" alt="#" />
+            </a>
+            <div>
+              <h2>{#title} - {#ddmmyyyy}</h2>
+              <div><span><a class="tag-post" href="#">{#tags}</a></span></div>
+              <p>{#excerpt} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus.</p>
+              <a class="btn btn-outline" href="#">{#Read more}</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="#">
+              <img src="#" alt="#" />
+            </a>
+            <div>
+              <h2>{#title} - {#ddmmyyyy}</h2>
+              <div><span><a class="tag-post" href="#">{#tags}</a></span></div>
+              <p>{#excerpt} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus.</p>
+              <a class="btn btn-outline" href="#">{#Read more}</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary">
+      <div class="inner">
+        <a name="about"></a>
+        <div>
+          Get in touch!
+        </div>
       </div>
     </section>
 
     <section>
       <div class="inner">
-        Get in touch!
+        <a name="contact"></a>
+        <div>
+          Get in touch!
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="bg-tertiary">
     <div class="inner">
-      <p>&copy; 2021 Keisuke Tanaka. All rights reserved.</p>
+      <p class="copyright">&copy; 2021 Keisuke Tanaka. All rights reserved.</p>
     </div>
   </footer>
 </body>
