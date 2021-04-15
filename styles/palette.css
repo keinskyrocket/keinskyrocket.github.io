@@ -1,0 +1,14 @@
+:root {
+  --pink: #E3007F;
+  --pink-hover: #FF1497;
+  --blue: #008BCE;
+  --blue-hover: #47ABDB;
+  --gray: #4A4A4A;
+  --gray-hover: #000000;
+
+  --loud-gray: #352926;
+  --quiet-gray: #DEDEDE;
+
+  --white: #FFFFFF;
+  --black: #222222;
+}

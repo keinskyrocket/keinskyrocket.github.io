@@ -1,0 +1,30 @@
+
+.inner {
+  /* background: var(--pink); */
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media only screen and (min-width: 480px) {
+  .inner {
+    max-width: 100%;
+    padding: 1.6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .inner {
+    max-width: 72rem;
+    padding: 1.6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .inner {
+    max-width: 96rem;
+    /* width: 98rem; */
+    padding: 1.6rem;
+  }
+}
+
+.website-title {
+  font-size: 6.4rem;
+}
+
