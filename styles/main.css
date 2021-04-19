@@ -25,6 +25,13 @@ a:active {
   margin-left: 0.4rem;
   vertical-align: super;
 }
+.title-link {
+  text-decoration: none;
+  color: var(--heading);
+}
+.title-link:hover {
+  color: var(--link-primary);
+}
 
 /* Background */
 .bg-primary {
