@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Keisuke's home page </title>
+  <meta charset="UTF-8">
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.typekit.net/csv6eug.css">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script>
+</head>
+
+<body>
+  <header class="bg-secondary">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li>Keisuke Tanaka</li>
+          <li>
+            <ul class="menu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="2021-04-14_dentity-values and-strength.html">About</a></li>
+              <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog">
+    <section>
+      <div class="inner">
+        <article>
+          <h2>Can't clone a repo from GitHub</h2>
+          <div class="icon tags fa-xs"><span class="tag-post">Sprint 1</span><span class="tag-post">Tech</span></div>
+            <!-- <img class="blog-hero" src="https://dev10devoptimalworkshop.wpcomstaging.com/wp-content/uploads/2021/02/thumb-sample.png" /> -->
+
+          <h3>Issue</h3>
+          <p>When cloning a repo from GitHub during Sprint 1 Challenge, I kept getting this error message. My username and password are correct, but I still couldn't get it through.</p>
+          <pre class="prettyprint"><code>$ git clone https://github.com/xxxxxxxx/ko-wai-koe.git
+Cloning into 'ko-wai-koe'...
+Username for 'https://github.com': keinskyrocket
+Password for 'https://keinskyrocket@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/xxxxxxxx/ko-wai-koe.git/</code></pre>
+          <h3>Cause</h3>
+          <p>(Probably) Two Factor Authentication (2FA) on GitHub because I enabled it.</p>
+          <figure class="box-reference">
+            <h5>Reference</h5>
+            <ul>
+              <li><a href="https://stackoverflow.com/questions/29297154/github-invalid-username-or-password" target="_blank" rel="noreferrer noopener">GitHub: invalid username or password</a> - stackoverflow</li>
+            </ul>
+          </figure>
+          <h3>Solution</h3>
+          <p>Generate a Personal Access Token on GitHub.</p>
+          <ol>
+            <li>Go to <a href="https://github.com/settings/tokens" target="_blank" rel="noreferrer noopener">Personal access tokens page</a></li>
+            <li>Hit <span class="highlight">Generate new token</span> button from top right</li>
+            <li>Type your informative description for the token in <span class="highlight">Note</span> text field </li>
+            <li>Tick everything under <span class="highlight">Select scopes</span> for now</li>
+            <li>Hit <span class="highlight">Generate token</span> button at the bottom of the page</li>
+            <li>Go back to Terminal and hit <span class="highlight">git clone {#repo-url}</span></li>
+            <li>Type your username</li>
+            <li>Copy and paste the token you just generated from GitHub, and use it instead of your password</li>
+          </ol>
+        </article>
+        <div class="timestamp">
+          Published on 13 April, 2021
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-tertiary">
+    <section class="bg-primary">
+      <div class="inner center">
+        <ul class="social">
+          <li><a href="https://github.com/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-github fa-lg"></i></a></li>
+          <li><a href="https://codepen.io/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-codepen fa-lg"></i></a></li>
+          <li><a href="https://stackoverflow.com/users/15688190/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-stack-overflow fa-lg"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tanaka-keisuke-9aa832124/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="inner center">
+      <p class="copyright">&copy; Keisuke Tanaka. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

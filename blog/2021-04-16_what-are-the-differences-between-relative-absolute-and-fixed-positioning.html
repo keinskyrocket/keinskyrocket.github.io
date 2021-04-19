@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Keisuke's home page </title>
+  <meta charset="UTF-8">
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.typekit.net/csv6eug.css">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="bg-secondary">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li>Keisuke Tanaka</li>
+          <li>
+            <ul class="menu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="2021-04-14_dentity-values and-strength.html">About</a></li>
+              <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog">
+    <section>
+      <div class="inner">
+        <article>
+          <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
+          <div class="icon tags fa-xs"><span class="tag-post">Sprint 1</span></div>
+          <!-- <img class="blog-hero" src="https://dev10devoptimalworkshop.wpcomstaging.com/wp-content/uploads/2021/02/thumb-sample.png" /> -->
+
+          <h3>What does position property do?</h3>
+          <p>The position is a name of CSS property which put any HTML element at whatever location you like. You can specify whether you want the element positioned relative to its natural position in the page or absolute based on its parent element.</p>
+          <p>With applying the offset for the positioning properties: left, right, top, bottom, z-index, clip and position, you can specify the location of the HTML element.</p>
+          <h3>Property values</h3>
+          <p>There are seven position properties:</p>
+          <ul>
+            <li><strong>static</strong> - is the default value, which doesn't have any effect on the HTML element. The element will be displayed as the normal page flow.</li>
+            <li><strong>relative</strong> - changes the position of the HTML element in the normal flow of the document. Unlike static elements</li>
+            <li><strong>absolute</strong> - is removed from the normal document flow. The other elements will behave as if that element is not in the document.</li>
+            <li><strong>fixed</strong> - is removed from the normal document flow like absolute, and allows you to fix the position of an element to a particular spot on the page, regardless of scrolling.</li>
+            <li><strong>sticky</strong> - is positioned according to the normal flow of the document until the scroll location of the viewport reaches a certain point. And it acts like a fixed element.</li>
+            <li><strong>initial</strong> - sets back to the brower default CSS position property when you have changed the property you wanted to be as your new default.</li>
+            <li><strong>inherit</strong> - grabs the positioning value from its parent. Unlike initial, it doesn't grab the browser default property.</li>
+          </ul>
+          <p>Each property serves a specific purpose. Let's take a closer took at three most frequestly used position's values in comparison with position: static;.</p>
+          <p><em>Elements with positioning as static are not affected by any of the CSS Positioning properties (left, right, top and bottom).</em></p>
+          <h4>1. position: relative;</h4>
+          <p>The positioning property for position: relative;(the yellow box) is set to <span class="highlight">top: 20px;</span> and <span class="highlight">left: 50px;</span>. It is moved 20px to the bottom direction and 50px to the right direction from the previous element which is the teal box. The yellow box follows the normal flow of the document as intended. The yellow box moves together with the rest of the elements when you are scrolling.</p>
+          <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="css,result" data-user="keinskyrocket" data-slug-hash="ExZRLrR" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Example: position relative;">
+            <span>See the Pen <a href="https://codepen.io/keinskyrocket/pen/ExZRLrR">
+            Example: position relative;</a> by Keisuke (<a href="https://codepen.io/keinskyrocket">@keinskyrocket</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <h4>2. position: absolute;</h4>
+          <p>The positioning property for position: absolute;(the yellow box) is set to <span class="highlight">top: 100px;</span> and <span class="highlight">left: 200px;</span>. It is moved 100px to the bottom direction and 200px to the right direction from the origin point of the page. The other elements ignore the yellow box as if it is not there. The yellow box moves together with the rest of the elements when you are scrolling.</p>
+          <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="css,result" data-user="keinskyrocket" data-slug-hash="ExZRRad" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Example: position: absolute;">
+            <span>See the Pen <a href="https://codepen.io/keinskyrocket/pen/ExZRRad">
+            Example: position: absolute;</a> by Keisuke (<a href="https://codepen.io/keinskyrocket">@keinskyrocket</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <h4>3. position: fixed;</h4>
+          <p>The positioning property for position: fixed;(the yellow box) is set to <span class="highlight">top: 100px;</span> and <span class="highlight">left: 200px;</span>. The way it is positioned is the same as position: absolute;. However, the location of the yellow box remains as it is when you are scrolling.</p>
+          <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="css,result" data-user="keinskyrocket" data-slug-hash="bGgKKVg" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Example: position: fixed;">
+            <span>See the Pen <a href="https://codepen.io/keinskyrocket/pen/bGgKKVg">
+            Example: position: fixed;</a> by Keisuke (<a href="https://codepen.io/keinskyrocket">@keinskyrocket</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <h3>Wrap up</h3>
+          <p><span class="highlight">The position: relative;</span> could probably come handy when stylign a dropdown type of nagivation with multiple tiers. The lower tier must be tied to its parent all the time to keep its information architecture together.</p>
+          <p>When I want to isolate a HTML element from others and give something unique to it, I will use <span class="highlight">position: absolute;</span> because its positioniing is pretty much independent. I'm thinking about cases like decorative objects to move around where I want them to be.</p>
+          <p>Lastly, <span class="highlight">the position: fixed;</span> should widely be used for elements like sticky navigation that could ptentially brings better UX by making the component visible all the time.</p>
+            
+            <figure class="box-reference">
+            <h5>Reference</h5>
+            <ul>
+              <li><a href="https://www.w3schools.com/cssref/pr_class_position.asp" target="_blank" rel="noreferrer noopener">CSS position Property - w3schools.com</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank" rel="noreferrer noopener">position - MDN Web Docs</a></li>
+              <li><a href="https://css-tricks.com/getting-acquainted-with-initial/" target="_blank" rel="noreferrer noopener">Getting Acquainted with Initial - CSS Tricks</a></li>
+              <li><a href="https://css-tricks.com/almanac/properties/p/position/" target="_blank" rel="noreferrer noopener">position - CAA Tricks</a></li>
+              <li><a href="https://ishadeed.com/article/learn-css-positioning/" target="_blank" rel="noreferrer noopener">Learn CSS Positioning - Ahmad Shadeed</a></li>
+            </ul>
+          </figure>
+        </article>
+        <div class="timestamp">
+          Published on 16 April, 2021
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-tertiary">
+    <section class="bg-primary">
+      <div class="inner center">
+        <ul class="social">
+          <li><a href="https://github.com/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-github fa-lg"></i></a></li>
+          <li><a href="https://codepen.io/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-codepen fa-lg"></i></a></li>
+          <li><a href="https://stackoverflow.com/users/15688190/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-stack-overflow fa-lg"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tanaka-keisuke-9aa832124/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="inner center">
+      <p class="copyright">&copy; Keisuke Tanaka. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
