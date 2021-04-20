@@ -128,18 +128,16 @@ nav li {
   width: 100%;
 }
 
-/* @media only screen and (min-width: 480px) {
-  .card {
-    width: 42%
-  }
-} */
 @media only screen and (min-width: 768px) {
-  .card {
+  .col-2-tb {
     width: 42%
   }
 }
 @media only screen and (min-width: 992px) {
-  .card {
+  .col-2-dt {
+    width: 42%
+  }
+  .col-3-dt {
     width: 28%
   }
 }
@@ -148,8 +146,16 @@ nav li {
   font-size: 2rem;
   margin-bottom: 0.8rem;;
 }
-.card p {
+.card h3 {
+  margin-top: 0;
+}
+.card p,
+.card li {
   font-size: 1.6rem;
+}
+.card-blank {
+  border: none;
+  margin: 0;
 }
 
 /* Button */
