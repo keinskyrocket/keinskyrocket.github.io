@@ -1,0 +1,40 @@
+// colors
+// n.b.: colors should be namespaced with a
+// color- prefix
+$color-brand-10: #e7f5f7;
+$color-brand-20: #c1e6ea;
+$color-brand-30: #85d1d7;
+$color-brand-40: #00afb9;
+$color-brand-50: #006a6f;
+$color-brand-60: #013d41;
+$color-brand-00: $color-brand-40;
+
+$color-grey-10: #f2f6f7;
+$color-grey-20: #e1eaec;
+$color-grey-30: #bac4c8;
+$color-grey-40: #89949b;
+$color-grey-50: #4b555c;
+$color-grey-60: #2b2f32;
+$color-grey-00: $color-grey-60;
+
+$color-focus: #f9c506;
+$color-highlight: #fdf0c1;
+$color-highlight-copy: #957604;
+$color-white: #FFFFFF;
+$color-black: #222222;
+
+$color-link-primary: $color-brand-40;
+$color-link-primary-hover: $color-brand-50;
+$color-link-secondary: $color-grey-40;
+$color-link-secondary-hover: $color-grey-50;
+
+$color-bg-primary: $color-grey-10;
+$color-bg-secondary: $color-brand-10;
+$color-bg-tertiary: $color-grey-30;
+
+$color-copy: $color-grey-50;
+$color-copy-loud: $color-grey-60;
+$color-copy-quiet: $color-grey-40;
+$color-heading: $color-grey-60;
+
+$color-shadow: $color-grey-20;
