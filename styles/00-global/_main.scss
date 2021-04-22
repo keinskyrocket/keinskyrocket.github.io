@@ -81,9 +81,16 @@ main {
   font-size: 6.4rem;
 }
 
+.home {
+  header {
+    margin-top: 0;
+  }
+}
+
 // Navigation //
 header {
   margin-bottom: 4.8rem !important;
+  margin-top: -2.7rem;
 
   nav {
     ul {
@@ -100,9 +107,13 @@ header {
   }
 }
 
-.social li {
-  display: inline-block;
-  margin: 0 1.6rem;
+footer {
+  margin-top: -2.7rem;
+  
+  .social li {
+    display: inline-block;
+    margin: 0 1.6rem;
+  }
 }
 
 // Container //
