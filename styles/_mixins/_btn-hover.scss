@@ -1,0 +1,5 @@
+@mixin btn-hover {
+  background: $color-link-primary-hover;
+  border: solid 0.1rem $color-link-primary-hover;
+  color: $color-white;
+}
