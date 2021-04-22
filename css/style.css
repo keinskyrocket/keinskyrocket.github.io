@@ -295,8 +295,13 @@ main {
   font-size: 6.4rem;
 }
 
+.home header {
+  margin-top: 0;
+}
+
 header {
   margin-bottom: 4.8rem !important;
+  margin-top: -2.7rem;
 }
 
 header nav ul {
@@ -320,7 +325,11 @@ header nav .menu li {
   margin-left: 3.2rem;
 }
 
-.social li {
+footer {
+  margin-top: -2.7rem;
+}
+
+footer .social li {
   display: inline-block;
   margin: 0 1.6rem;
 }
