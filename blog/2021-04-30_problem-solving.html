@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Keisuke's home page </title>
+  <script src="../scripts/meta.js"></script>
+</head>
+
+<body>
+  <script src="../scripts/header.js"></script>
+
+  <main class="blog">
+    <section>
+      <div class="inner">
+        <article>
+          <h2>Problem solving</h2>
+          <div class="icon tags fa-xs"><span class="tag-post">Sprint 4</span><span class="tag-post">Tech</span></div>
+          <!-- <img class="blog-hero" src="https://dev10devoptimalworkshop.wpcomstaging.com/wp-content/uploads/2021/02/thumb-sample.png" /> -->
+
+          <h3>A simple problem that got me stumped</h3>
+          <p>
+            This case is from FizzBuzz exercise in Sprint 4. I was writing multiple conditions by using if, and I was pretty sure with the conditions I set, but I still got an error.
+          </p>
+          <h5>Problem</h5>
+          <p>
+            I kept receiving an error while I was trying to build a function to narrow down which number should return certain string.
+          </p>
+          <pre class="prettyprint"><code>Error: if the number is a multiple of three AND five, fizzbuzz should return the string 'FizzBuzz'</code></pre>
+          <h5>Techniques used</h5>
+          <ul>
+            <li><strong>Google</strong> &mdash; Resources I was looking for were mainly to confirm if the grammar of the code is correct. I also searched for alternative solutions without using the initial approach.</li>
+            <li><strong>Console.logging</strong> &mdash; I frequently used this for basically checking returned values.</li>
+            <li><strong>Pseudocode</strong> &mdash; This technique was actually the reason why I found my initial attempt was wrong. It helped me look into what to think in order.</li>
+          </ul>
+
+          <h5>My journey</h5>
+          <p>
+            So, this was my initial attempt. I wrote this while I was reading the instruction. Needless to say, I was just following the instruction as written without thinking about context which is when the code will be executed. This will return "Fizz" when you run a console.log check with multiples of 15.
+          </p>
+          <pre class="prettyprint"><code>function fizzbuzz(num) {
+  if (num % 3 === 0) {
+    return "FizzBuzz";
+  } else if (num % 5 === 0) {
+    return "Fizz";
+  } else if (num % 15 === 0) {
+    return "Buzz";
+  } else {
+    return num;
+  }
+}</code></pre>
+          <p>
+            The grammar was correct. So was spelling. I nearly ran out of options to try out. Then, I remembered the technique of pseudocode. I wrote down what this code is supposed to do in human language as well as its returned value just in case. Then look what I've found!
+          </p>
+          <pre class="prettyprint"><code>// If the number is multiples of 3, it will be 3, 6, 9, 12, 15, 18, 21, 24, 27, 30... 
+// If the number is multiples of 5, it will be 5, 10, 15... WAIT??</code></pre>
+          <p>
+            I realised something went wrong in my writing when I was picking up multiples of 5. Yes, I found a conflict here, and spotted why it returned "Fizz" whenever I tested with multiples of 15. So I  moved this line to the top like the code below.
+          </p>
+          <pre class="prettyprint"><code>// If the number is multiples of 15, it will be 15, 30, 45...
+// If the number is multiples of 3, it will be 3, 6, 9, 12, 18, 21, 24, 27...
+// If the number is multiples of 5, it will be 5, 10, 20, 25...</code></pre>
+          <p>
+            And the final outcome is this.
+          </p>
+          <pre class="prettyprint"><code>function fizzbuzz(num) {
+  if (num % 15 === 0) {
+    return "FizzBuzz";
+  } else if (num % 3 === 0) {
+    return "Fizz";
+  } else if (num % 5 === 0) {
+    return "Buzz";
+  } else {
+    return num;
+  }
+}</code></pre>
+          <h5>Takeaways</h5>
+          <p>
+            Thinking everything only in my head is one way ticket to the world of confusion. When I encounter any tech issues (big or small), I tend to scope the area of problem too big. My initial action most of the time was to hit the internet to seek resources so that I can solidify my understanding on what I'm trying to do. Then I dig deeper and deeper... The worst part is I enjoy it when I have extra time. When I don't, I feel rushed and just end up with a big amount of handful resources with countless tabs opened on my browser.
+          </p>
+          <p>
+            How might I do it differently? I still think that looking for resources on the internet is not so bad by considering I'm still learning the basics. Within flipped learning, this is probably the way to go. However, I really must time it! I definitely need to know how long to be given for the research even though I have a thirst for new information. I'm also keen to experiment a pair work if people are available. The problem like this could be spotted by other people easily, and I could save tons of time after all.
+          </p>
+
+          <h3>Successful problem solving</h3>
+          <p>
+            It took me quite a while to understand how to manipulate complex objects, and I'm still working on it. As much as I love (or make efforts) to simplify things, I somehow produce complicated things in the initial attempt. This is a good example of how I could turn something complicated into simple during an exercise, Gradebook in Sprint 4.
+          </p>
+          <h5>Problem</h5>
+          <p>
+            I had a lucky guess that passed compiling a code which I didn't fully understand why it worked.
+          </p>
+          <h5>Techniques used</h5>
+          <ul>
+            <li><strong>Asking coaches for help</strong> &mdash; During weekly catch-up with my facilitator, I explained my uncertainty about the code I wrote.</li>
+          </ul>
+          <h5>My journey</h5>
+          <p>
+            Let's go straight to the point. This story is not about how I amazingly solved my problem on my own. This is about how having another eye will help me learn more and better.
+          </p>
+          <p>
+            I haven't got a solid understanding on manipulating complex objects yet, but I'm getting there(...growth mindset). So I took a chance in the weekly catch-up with my facilitator and shared the code that I was working on. After I got my answer, my facilitator provided me awesome feedback on the other part of the code I never thought of getting feedback.
+          </p>
+          <p>
+            What I'm trying here is to assign the keys and values to the object I created earlier.
+          </p>
+          <pre class="prettyprint"><code>for (let i = 0; i < students.length; i++) {
+  const x = {
+    testScores: scores[i]
+  }; 
+  Object.defineProperty(gradebook, students[i], {
+    value: x,
+    writable: true,
+    enumerable: true,
+    configurable: true
+  });
+}</code></pre>
+          <p>
+            And this is a suggestion I received. (Wow, so clean!) Absolutely, pennies from heaven. This was my first "aha!" moment.
+          </p>
+          <pre class="prettyprint"><code>for (let i = 0; i < students.length; i++) {
+  gradebook[students[i]] = { testScores : scores[i] };
+}</code></pre>
+
+          <h5>Takeaways</h5>
+          <p>
+            I just witnessed the power of eyes from others. I realised there are so many things that are happening right in front of me, but I hardly notice the opportunities to improve my skill just because I'm too focused on the problem I'm currently solving. Now I totally get why many people recommend to do pairing work so many times. 
+          </p>
+
+          <h3>Problem solving techniques and process</h3>
+          <p>
+            This is my top 5 problem solving techniques and process, and how they have treated me during my learning journey so far.
+          </p>
+          <ol>
+            <li><strong>Googling</strong> &mdash; Searching for the right resources to solve my problem was hard because I can easily get overwhelmed by tons of information. Without timing the length of research, this technique can interfere my primary goal. The key to use this more successfully for me is to manage my schedule.</li>
+            <li><strong>Console.logging</strong> &mdash; This is my new habit now, and I love doing it because I can verify what I want to do in code.</li>
+            <li><strong>Pseudocode</strong> &mdash; Surprisingly, this is my dark horse. The process of converting from human language to computer language teaches me how I need to think in code. I normally write a code per one action, which sometimes makes the code complex. But this is definitely a good starting point.</li>
+            <li><strong>Trying something</strong> &mdash; Definitely trying something whether I know it well or not, will return something to work on next.</li>
+            <li><strong>Reading error messages</strong> &mdash; I found this a bit tricky because error doesn't always help me fix codes. The relevance is not always true. Sometimes the line the error occurs turns out correct, and the whole problem was just a spelling mistake. Not always reliable technique.</li>
+          </ol>
+          <p>
+            And these are the techniques and process I've used least. Here is some comments about why I used them less or didn't use them at all until now.
+          </p>
+          <ul>
+            <li><strong>Rubber ducky method</strong> &mdash; To be honest, I haven't tried this technique because I try other techniques that I think help me find a solution quickly. And writing pseudocode while talking could probably be similar. </li>
+            <li><strong>Asking your peers for help</strong> &mdash; The main reason why I haven't actively looked for this opportunity is simply we are remote, and setting up a pairing work may not be suitable during the foundation period. Now that I know the power of eyes from others, I'm definitely keen in the future!</li>
+            <li><strong>Asking coaches for help</strong> &mdash; As long as availability is open, I'm up for it.</li>
+            <li><strong>Improving your process with reflection</strong> &mdash; I guess writing blog articles falls this category, perhaps? Revisiting things done and documenting them in a way that others can understand is absolutely powerful.</li>
+          </ul>
+          <p>
+            Lastly, one thing I found interesting through this exercise of problem solving is the importance of planning. Apart from actual project planing, I used to call this phase <span class="highlight">wire-framing</span> in my previous career, designer. Wireframe is a very beginning of design process, and it can be done in hand-drawn sketch. This basically is a blueprint of product.
+          </p>
+          <p>
+            I realised I went through quite similar process with pseudocode. Although it's in written format, pseudocode defines and clarifies features of my idea. I'm on the track of improving this skill, but I believe writing pseudocode will save heaps of my time and enhance productivity.
+          </p>
+        </article>
+        <div class="timestamp">
+          Published on 30 April, 2021
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/footer.js"></script>
+</body>
+
+</html>
