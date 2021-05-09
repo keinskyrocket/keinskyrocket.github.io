@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title> Keisuke's home page </title>
-  <script src="../scripts/meta.js"></script>
+<head w3-include-html="../include/meta.html">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <script src="../scripts/header.js"></script>
+  <div w3-include-html="../include/header.html"></div>
 
   <main class="blog">
     <section>
@@ -19,7 +18,7 @@
 
           <h3>Issue</h3>
           <p>When cloning a repo from GitHub during Sprint 1 Challenge, I kept getting this error message. My username and password are correct, but I still couldn't get it through.</p>
-          <pre class="prettyprint"><code>$ git clone https://github.com/xxxxxxxx/ko-wai-koe.git
+          <pre class="language-js""><code>$ git clone https://github.com/xxxxxxxx/ko-wai-koe.git
 Cloning into 'ko-wai-koe'...
 Username for 'https://github.com': keinskyrocket
 Password for 'https://keinskyrocket@github.com':
@@ -53,7 +52,11 @@ fatal: Authentication failed for 'https://github.com/xxxxxxxx/ko-wai-koe.git/</c
     </section>
   </main>
 
-  <script src="../scripts/footer.js"></script> 
+  <div w3-include-html="../include/footer.html"></div>
+
+  <script src="../scripts/main.js"></script>
+  <script>includeHTML();</script>
+  <script src="../scripts/prism.js"></script>
 </body>
 
 </html>

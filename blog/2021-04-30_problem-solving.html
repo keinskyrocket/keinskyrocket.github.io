@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title> Keisuke's home page </title>
-  <script src="../scripts/meta.js"></script>
+<head w3-include-html="../include/meta.html">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <script src="../scripts/header.js"></script>
+  <div w3-include-html="../include/header.html"></div>
 
   <main class="blog">
     <section>
@@ -25,7 +24,7 @@
           <p>
             I kept receiving an error while I was trying to build a function to narrow down which number should return certain string.
           </p>
-          <pre class="prettyprint"><code>Error: if the number is a multiple of three AND five, fizzbuzz should return the string 'FizzBuzz'</code></pre>
+          <pre class="language-js"><code>Error: if the number is a multiple of three AND five, fizzbuzz should return the string 'FizzBuzz'</code></pre>
           <h5>Techniques used</h5>
           <ul>
             <li><strong>Google</strong> &mdash; Resources I was looking for were mainly to confirm if the grammar of the code was correct. I also searched for alternative solutions without using the initial approach.</li>
@@ -37,7 +36,7 @@
           <p>
             So, this was my initial attempt. I wrote this while I was reading the instructions. Needless to say, I was just following the instructions as written without thinking about the context in which the code would be executed. This will return "Fizz" when you run a console.log check with multiples of 15.
           </p>
-          <pre class="prettyprint"><code>function fizzbuzz(num) {
+          <pre class="language-js"><code>function fizzbuzz(num) {
   if (num % 3 === 0) {
     return "FizzBuzz";
   } else if (num % 5 === 0) {
@@ -51,18 +50,18 @@
           <p>
             The grammar was correct. So was the spelling. I nearly ran out of options to try out. Then, I remembered the technique of pseudocode. I wrote down what this code is supposed to do in human language as well as its returned value just in case. Then look what I found!
           </p>
-          <pre class="prettyprint"><code>// If the number is multiples of 3, it will be 3, 6, 9, 12, 15, 18, 21, 24, 27, 30... 
+          <pre class="language-js"><code>// If the number is multiples of 3, it will be 3, 6, 9, 12, 15, 18, 21, 24, 27, 30... 
 // If the number is multiples of 5, it will be 5, 10, 15... WAIT??</code></pre>
           <p>
             I realised something went wrong in my writing when I was picking up multiples of 5. Yes, I found a conflict here, and spotted why it returned "Fizz" whenever I tested with multiples of 15. So I  moved this line to the top like the code below.
           </p>
-          <pre class="prettyprint"><code>// If the number is multiples of 15, it will be 15, 30, 45...
+          <pre class="language-js"><code>// If the number is multiples of 15, it will be 15, 30, 45...
 // If the number is multiples of 3, it will be 3, 6, 9, 12, 18, 21, 24, 27...
 // If the number is multiples of 5, it will be 5, 10, 20, 25...</code></pre>
           <p>
             And the final outcome is this.
           </p>
-          <pre class="prettyprint"><code>function fizzbuzz(num) {
+          <pre class="language-js"><code>function fizzbuzz(num) {
   if (num % 15 === 0) {
     return "FizzBuzz";
   } else if (num % 3 === 0) {
@@ -103,7 +102,7 @@
           <p>
             What I'm trying here is to assign the keys and values to the object I created earlier.
           </p>
-          <pre class="prettyprint"><code>for (let i = 0; i < students.length; i++) {
+          <pre class="language-js"><code>for (let i = 0; i < students.length; i++) {
   const x = {
     testScores: scores[i]
   }; 
@@ -117,7 +116,7 @@
           <p>
             And this is a suggestion I received. (Wow, so clean!) Absolutely, pennies from heaven. This was my first "aha!" moment.
           </p>
-          <pre class="prettyprint"><code>for (let i = 0; i < students.length; i++) {
+          <pre><code class="language-js">for (let i = 0; i < students.length; i++) {
   gradebook[students[i]] = { testScores : scores[i] };
 }</code></pre>
 
@@ -160,7 +159,11 @@
     </section>
   </main>
 
-  <script src="../scripts/footer.js"></script>
+  <div w3-include-html="../include/footer.html"></div>
+
+  <script src="../scripts/main.js"></script>
+  <script>includeHTML();</script>
+  <script src="../scripts/prism.js"></script>
 </body>
 
 </html>

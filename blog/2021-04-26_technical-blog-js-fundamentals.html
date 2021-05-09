@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title> Keisuke's home page </title>
-  <script src="../scripts/meta.js"></script>
+<head w3-include-html="../include/meta.html">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <script src="../scripts/header.js"></script>
+  <div w3-include-html="../include/header.html"></div>
 
   <main class="blog">
     <section>
@@ -30,7 +29,7 @@
           <h4>if-else and switch</h4>
           <p>Let's take a look at the example of how <span class="highlight"><strong>if else</strong></span> and <span class="highlight"><strong>switch</strong></span> can be used within a context of everyday life with an example of psychic dog I've never had.</p>
           <h5>Example with if else</h5>
-          <pre class="prettyprint"><code>if (my dog barks once) {
+          <pre class="language-js"><code>if (my dog barks once) {
   "Cuddle him"
 } else if (my dog barks twice) {
   "Give him a snack"
@@ -40,7 +39,7 @@
   "Assume he is talking to a ghost"
 }</code></pre>
           <h5>Example with switch</h5>
-          <pre class="prettyprint"><code>switch (my dog) {
+          <pre class="language-js"><code>switch (my dog) {
   case barks once:
     "Cuddle him" 
     break
@@ -79,17 +78,17 @@
           </article>
           <h4>while, do-while and for</h4>
           <p>These three are loops. Again, I was very confused with how to differentiate them. But the key to understand these three is to know when the statement is executed and how many times. Let's take a look at this example.</p>
-          <pre class="prettyprint"><code>while (my crush is interested in me) {
+          <pre class="language-js"><code>while (my crush is interested in me) {
   "Show my affection"
 }</code></pre>
           <p>When you use <span class="highlight"><strong>while</strong> loop</span> like above, your execution continues infinitely as long as you meet the condition.</p>
-          <pre class="prettyprint"><code>do {
+          <pre class="language-js"><code>do {
   "Show my affection"
 } while (my crush is interested in me)</code></pre>
           <p>Like the example above, both <strong>while</strong> and <strong>do while</strong> can loop the execution forever while the condition is met. But there is a big difference between these two.</p>
           <p>In while loop, I never try to show my affection while I know my crush is <strong>NOT</strong> interested in me, whereas I give it a shot only once in the <span class="highlight"><strong>do-while</strong> loop</span> above while I know my crush is <strong>NOT</strong> interested in me. In terms of making an important life choice, I personally like to try at least once. However, I just need to be smart enough to know whether to use while or do-while when living in JavaScript world.</p>
           <p>What about another loop, <strong>for</strong>?</p>
-          <pre class="prettyprint"><code>for (12 years old now; my crush is interested in me till I turn 18; getting older) {
+          <pre class="language-js"><code>for (12 years old now; my crush is interested in me till I turn 18; getting older) {
   "Show my affection"
 }</code></pre>
 <p>This is like I somehow figured out my first love won't last long, and I see this teenage love is temporary. So I've decided to show my affection till I graduate high school. What a kid... Apart from how realistic I am (metaphorically speaking), I know how many times I want to loop the execution when I use <span class="highlight"><strong>for</strong> loop</span>.</p>
@@ -114,20 +113,20 @@
           <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
           <br />
           <p>Firstly, what I did here down below is assigning <span class="highlight">document.getElementById("pandora")</span>to <strong>x</strong> because this makes the code look tidier.</p>
-          <pre class="prettyprint"><code>const x = document.getElementById("pandora");
+          <pre class="language-js"><code>const x = document.getElementById("pandora");
 //var y = document.getElementById('pushMe');
 //if (x.style.display === "none") {
   x.style.display = "block";
 //  y.value = "Hide again";</code></pre>
           <p>And there is no secret about this is what it was originally. If I translate this into human language, it will be: I'm going to assign <span class="highlight">value: block</span> to css attribute <span class="highlight">display</span>, and apply this to ID called <span class="highlight">pandora</span>. Basically I specified the location where I want to apply the css style by this line.</p>
-          <pre class="prettyprint"><code>
+          <pre class="language-js"><code>
 document.getElementById("pandora").style.display = "block";
           </code></pre>
           <h3>Difference between accessing data from arrays and objects</h3>
           <p>I'll go over this section nice and easy. Simply put, arrays access data by referencing index whereas objects do so by referencing property.</p>
-          <pre class="prettyprint"><code>const arr = ["Land", "Air", "Ocean"];
+          <pre class="language-js"><code>const arr = ["Land", "Air", "Ocean"];
 console.log(arr[0]);</code></pre>
-          <pre class="prettyprint"><code>const obj = {
+          <pre class="language-js"><code>const obj = {
   Strength: "Alcohol",
   Weakness: "Puppies",
   Charm: "Nail colour"
@@ -145,7 +144,7 @@ console.log(obj.name);</code></pre>
           <p>This is at least what I know about JavaScript, and there should be more going on to the list! Here is an example of what difference function can make.</p>
           <h5>Before</h5>
           <p>This basically shows you an alert message saying "Greetings!" when you open the page. It is only one-time event.</p>
-          <pre class="prettyprint"><code>
+          <pre class="language-js"><code>
 alert("Greetings!");
           </code></pre>
           <h5>After</h5>
@@ -156,10 +155,10 @@ alert("Greetings!");
             <li>Display the modal window</li>
             <li>Show a massage in the modal window</li>
           </ul>
-          <pre class="prettyprint"><code>
+          <pre class="language-js"><code>
 &lt;button onclick="hitMe()"&gt;Hit me!!&lt;/button&gt;
           </code></pre>
-          <pre class="prettyprint"><code>function hitMe() {
+          <pre class="language-js"><code>function hitMe() {
   var myText = "Greetings!";
   alert (myText);
 }</code></pre>
@@ -181,7 +180,11 @@ alert("Greetings!");
     </section>
   </main>
 
-  <script src="../scripts/footer.js"></script>
+  <div w3-include-html="../include/footer.html"></div>
+
+  <script src="../scripts/main.js"></script>
+  <script>includeHTML();</script>
+  <script src="../scripts/prism.js"></script>
 </body>
 
 </html>
