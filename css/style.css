@@ -638,4 +638,54 @@ footer .social li {
 code {
   font-size: 1.4rem !important;
 }
+
+.members {
+  margin-bottom: 9.6rem;
+}
+
+.members article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.8rem 1.6rem;
+}
+
+.members article:nth-child(2n) {
+  background: #f2f6f7;
+}
+
+.members article p {
+  width: calc(100% - 100px);
+  margin-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .members article p {
+    width: calc((100% - 100px) / 2);
+  }
+}
+
+.members article p:nth-child(2) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .members article p:nth-child(2) {
+    display: inline-block;
+  }
+}
+
+.members article p:last-child {
+  width: 100px;
+}
 /*# sourceMappingURL=style.css.map */
