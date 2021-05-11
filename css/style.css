@@ -332,67 +332,6 @@ main {
   margin-top: 0;
 }
 
-header {
-  margin-bottom: 4.8rem !important;
-}
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header nav li {
-  margin-bottom: 0;
-}
-
-header nav .logo img {
-  width: 30px;
-  margin-right: 1.6rem;
-}
-
-header nav .menu li {
-  margin-left: 3.2rem;
-}
-
-footer {
-  margin-top: -2.7rem;
-}
-
-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer ul li {
-  padding: 0;
-  margin: 0;
-}
-
-footer ul .menu li {
-  margin-right: 2.4rem;
-}
-
-footer .social li {
-  display: inline-block;
-  margin: 0 1.6rem;
-}
-
 .hero {
   margin-bottom: 4.8rem;
 }
@@ -687,5 +626,173 @@ code {
 
 .members article p:last-child {
   width: 100px;
+}
+
+header {
+  margin-bottom: 4.8rem !important;
+}
+
+@media only screen and (min-width: 768px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+header nav li {
+  margin: 0;
+  line-height: 100%;
+}
+
+header nav .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .label .logo img {
+  width: 30px;
+  margin-right: 1.6rem;
+}
+
+header nav .label .toggle {
+  color: #00afb9;
+  cursor: pointer;
+  padding-top: 0.4rem;
+}
+
+header nav .label .toggle:hover {
+  color: #006a6f;
+}
+
+header nav .label .toggle::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9";
+}
+
+@media only screen and (min-width: 768px) {
+  header nav .label .toggle {
+    display: none;
+  }
+}
+
+header nav .menu {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  height: 0;
+}
+
+header nav .menu.show-all {
+  display: inline-block;
+  height: 16rem;
+  margin-top: 1.6rem;
+}
+
+header nav .menu a {
+  border-top: 1px solid #c1e6ea;
+  cursor: pointer;
+  display: block;
+  padding: 1.6rem;
+  text-decoration: none;
+}
+
+header nav .menu a:last-child {
+  border-bottom: 1px solid #c1e6ea;
+}
+
+header nav .menu a:hover {
+  background: #006a6f;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav .menu a li::after {
+  margin-left: 1.6rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header nav .menu {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: visible;
+  }
+  header nav .menu a {
+    border: 0;
+    display: inline-block;
+    padding: 0;
+    text-decoration: underline;
+  }
+  header nav .menu a:last-child {
+    border: 0;
+  }
+  header nav .menu a:hover {
+    color: #006a6f;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header nav .menu a li {
+    margin: 0.4rem 0 0 3.2rem;
+  }
+  header nav .menu a li::after {
+    display: none;
+  }
+}
+
+footer {
+  margin-top: -2.7rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul li {
+  padding: 0;
+  margin: 0;
+}
+
+footer ul .menu li {
+  margin-right: 2.4rem;
+}
+
+footer .social li {
+  display: inline-block;
+  margin: 0 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */

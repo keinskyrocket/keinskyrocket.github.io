@@ -24,4 +24,12 @@ function includeHTML() {
       return;
     }
   }
+
+  // Nav toggle
+  const myToggle = document.querySelector(".toggle");
+  const myMenu = document.querySelector(".menu");
+
+  myToggle.addEventListener("click", function () {
+    myMenu.classList.toggle("show-all");
+  });
 }

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title> Keisuke's home page </title>
-  <script src="../scripts/meta.js"></script></head>
+<head w3-include-html="../include/meta.html">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
+</head>
+  
 <body>
-  <script src="../scripts/header.js"></script>
+  <div w3-include-html="../include/header.html"></div>
 
   <main class="blog">
     <section>
@@ -43,7 +44,11 @@
     </section>
   </main>
 
-  <script src="../scripts/footer.js"></script>
+  <div w3-include-html="../include/footer.html"></div>
+
+  <script src="../scripts/main.js"></script>
+  <script>includeHTML();</script>
+  <script src="../scripts/prism.js"></script>
 </body>
 
 </html>
