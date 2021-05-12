@@ -1,0 +1,30 @@
+// Links //
+a {
+  color: $color-link-primary;
+}
+a:hover {
+  color: $color-link-primary-hover;
+}
+a:focus {
+  color: $color-link-primary;
+  outline: 0.4rem solid $color-focus;
+  outline-offset: 0;
+}
+a:active {
+  color: $color-link-primary;
+  outline: none;
+  outline-offset: 0;
+}
+.external-link::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f35d";
+  font-size: 75%;
+  margin-left: 0.4rem;
+  vertical-align: super;
+}
+.title-link {
+  text-decoration: none;
+  color: $color-heading;
+}
+.title-link:hover {
+  color: $color-link-primary;
+}

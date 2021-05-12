@@ -1,0 +1,29 @@
+// Tab
+.tab {
+  overflow: hidden;
+  border-bottom: 2px solid $color-brand-40;
+  margin: 4.8rem 0 -4.8rem;
+  
+  button {
+    background-color: $color-brand-10;
+    float: left;
+    border: none;
+    color: $color-copy;
+    outline: none;
+    cursor: pointer;
+    padding: 1.2rem 1.6rem;
+    transition: 0.3s;
+    font-size: 1.6rem;
+    border-radius: $border-radius-large $border-radius-large 0 0;
+    margin-right: 0.4rem;
+
+    &:hover {
+      background-color: $color-link-primary-hover;
+      color: $color-white;
+    }
+    &.active {
+      background-color: $color-link-primary;
+      color: $color-white;
+    }
+  } 
+}

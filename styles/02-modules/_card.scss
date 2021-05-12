@@ -1,0 +1,48 @@
+// Card //
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+  .card {
+    border: 0.1rem solid $color-grey-20;
+    border-radius: $border-radius-medium;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    width: 100%;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    p,
+    li {
+      font-size: 1.6rem;
+    }
+
+    &.col-2-tb {
+      @media only screen and (min-width: $screen-small) {
+        width: 42%
+      }
+    }
+    &.col-2-dt {
+      @media only screen and (min-width: $screen-medium) {
+        width: 42%
+      }
+    }
+    &.col-3-dt {
+      @media only screen and (min-width: $screen-medium) {
+          width: 28%
+      }
+    }
+    &.--blank {
+      border: none;
+      margin: 0;
+    }
+  }
+}

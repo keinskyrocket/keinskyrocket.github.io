@@ -3,7 +3,7 @@ header {
   margin-bottom: 4.8rem !important;
 
   nav {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $screen-small) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -38,7 +38,7 @@ header {
         &::before {
           font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c9";
         }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: $screen-small) {
           display: none;
         }
       }
@@ -81,7 +81,7 @@ header {
         }
       }
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: $screen-small) {
         width: auto;
         display: flex;
         overflow: visible;

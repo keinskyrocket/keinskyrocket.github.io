@@ -96,7 +96,7 @@ footer {
 
 .highlight {
   background: $color-highlight;
-  border-radius: 0.8rem;
+  border-radius: $border-radius-large;
   color: $color-highlight-copy;
   padding: 0 0.8rem;
 }

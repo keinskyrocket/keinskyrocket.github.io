@@ -1,0 +1,26 @@
+// Icon //
+.icon {
+  &::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 0.8rem;
+  }
+}
+.tags {
+  &::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f02c";
+  }
+  .tag-post {
+    background: $color-grey-20;
+    border: 0.1rem solid $color-grey-20;
+    border-radius: 2rem;
+    color: $color-copy !important;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 0.8rem 0.8rem 0;
+    padding: 0.1rem 0.8rem;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../_mixins/btn-hover";
+
+// Button //
+.btn {
+  background: $color-link-primary;
+  border: solid 0.1rem $color-link-primary;
+  border-radius: $border-radius-medium;
+  color: $color-white;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0.8rem 0;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    @include btn-hover;
+  }
+
+  &.btn-outline {
+    background: $color-white;
+    border: solid 0.1rem $color-link-primary;
+    color: $color-link-primary;
+
+    &:hover {
+      @include btn-hover;
+    }
+  }
+}

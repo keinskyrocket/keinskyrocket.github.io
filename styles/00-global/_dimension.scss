@@ -1,0 +1,43 @@
+$screen-xsmall:              480px !default;
+$screen-phone:               $screen-xsmall !default;
+$screen-phone-medium:        681px;
+// Small screen / tablet
+$screen-small:               768px !default;
+$screen-tablet:              $screen-small !default;
+
+// Medium screen / desktop
+$screen-medium:              992px !default;
+$screen-desktop:             $screen-medium !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-small-max:           ($screen-medium - 1) !default;
+$screen-tablet-max:          $screen-small-max !default;
+
+// Large screen / wide desktop
+$screen-large:               1200px !default;
+$screen-large-desktop:       $screen-large !default;
+
+// X Large screen
+$screen-xlarge:               1400px !default;
+
+
+$max-width: 114rem;
+
+$radius-image: 1rem;
+
+$font-large: 1.8rem;
+$font-medium: 1.4rem;
+$font-small: 1.2rem;
+
+// Border radiuses
+$border-radius-base:        2px !default;
+$border-radius-large:       0.8rem !default;
+$border-radius-medium:      0.4rem !default;
+$border-radius-small:       0.2rem !default;
+
+$header-height-desktop: 4.9rem;
+$header-height-mobile: 5.7rem;
+$header-height-nonav: 0;
+
+$banner-height-desktop: 5.4rem;
+$banner-height-mobile: 7.4rem;
