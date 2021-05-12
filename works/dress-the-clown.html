@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head w3-include-html="../include/meta.html">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
+</head>
+  
+<body>
+  <div w3-include-html="../include/header.html"></div>
+
+  <main style="height: 100%;">
+    <div class="inner center">
+      <style>
+        .dress-a-parent {
+          position: relative;
+          left: -156px;
+          height: 500px;
+        }
+        .head,
+        .body,
+        .shoes {
+          position: absolute;
+          top: 0;
+          height: 500px;
+        }
+        .head {z-index: 3;}
+        .body {z-index: 2;}
+        .shoes {z-index: 1;}
+  
+        #category {
+          position: relative;
+          font-size: 20px;
+          /* background: #f9c506; */
+          width: 260px;
+          margin: 0 auto;
+          padding: 0.8rem;
+          font-weight: 700;
+        }
+      </style>
+      <h2>Dress The Clown</h2>
+      <p>
+        Use <span class="highlight">UP</span> and <span class="highlight">DOWN</span> key to select parts.<br />Use <span class="highlight">LEFT</span> and <span class="highlight">RIGHT</span> key to switch items.
+      </p>
+      <p id="category"></p>
+      <div class="dress-a-parent">
+        <img class="dress-an-image head -active" src="dress-the-clown/images/head3.png"> <br>
+        <img class="dress-an-image body" src="dress-the-clown/images/body4.png"> <br>
+        <img class="dress-an-image shoes" src="dress-the-clown/images/shoes4.png">
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="../include/footer.html"></div>
+
+  <script src="dress-the-clown/dress-the-clown.js"></script> 
+
+  <script src="../scripts/main.js"></script>
+  <script>includeHTML();</script>
+  <script src="../scripts/prism.js"></script>
+</body>
+
+</html>

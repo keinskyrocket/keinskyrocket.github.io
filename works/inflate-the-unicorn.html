@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head w3-include-html="../include/meta.html">
+  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
+</head>
+  
+<body>
+  <div w3-include-html="../include/header.html"></div>
+
+  <main style="height: 100%;">
+    <div class="inner center">
+      <h2>Inflate The Unicorn</h2>
+      <p>
+        Click a unicorn image to blow the balloon.
+      </p>
+      <style>
+        .inflate-an-image {
+          width: 200px;
+          border: 2px solid #e1eaec;
+          border-radius: 10%;
+          padding: 1.6rem;
+          margin: 2.4rem 1.6rem 0;
+        }
+        .inflate-an-image:hover {
+          border: 2px solid #f9c506;
+        }
+      </style>
+      <div class="container">
+        <img class="inflate-an-image" src="inflate-the-unicorn/images/waiting-for-photo.png" >
+        <img class="inflate-an-image" src="inflate-the-unicorn/images/waiting-for-photo.png" >
+        <img class="inflate-an-image" src="inflate-the-unicorn/images/waiting-for-photo.png" >
+      </div>    
+    </div>
+  </main>
+
+  <div w3-include-html="../include/footer.html"></div>
+
+  <script src="inflate-the-unicorn/inflate-the-unicorn.js"></script>
+
+  <script src="../scripts/main.js"></script>
+  <script>includeHTML();</script>
+  <script src="../scripts/prism.js"></script>
+</body>
+
+</html>

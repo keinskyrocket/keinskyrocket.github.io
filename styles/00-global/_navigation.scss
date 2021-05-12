@@ -52,7 +52,7 @@ header {
 
       &.show-all {
         display: inline-block;
-        height: 16rem;
+        height: 21rem;
         margin-top: 1.6rem;
       }
 
@@ -113,6 +113,10 @@ header {
 
 footer {
   margin-top: -2.7rem;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  
   ul {
     display: flex;
     flex-direction: row;
