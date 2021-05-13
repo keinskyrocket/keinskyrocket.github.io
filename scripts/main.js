@@ -32,4 +32,28 @@ function includeHTML() {
   myToggle.addEventListener("click", function () {
     myMenu.classList.toggle("show-all");
   });
+
+  // Accordion
+  const btnAcrdn = document.querySelectorAll(".acrdn-btn");
+  btnAcrdn.forEach(function(item) {
+    item.addEventListener("click", function(evtAcrdn) {
+      const myTarget = evtAcrdn.currentTarget.parentElement.parentElement;
+      myTarget.classList.toggle("show-acrdn");
+    });
+  });
+
+  // Modal
+  const btnModal = document.getElementById("btnModal");
+  btnModal.addEventListener("click", function() {
+    const myModal = document.querySelector(".modal");
+    myModal.classList.add("show-mdl");
+  });
+
+  const btnModalClose = document.querySelectorAll(".btnModalClose");
+  btnModalClose.forEach(function (btnClose) {
+    btnClose.addEventListener("click", function() {
+      const myModal = document.querySelector(".modal");
+      myModal.classList.remove("show-mdl");
+    });
+  });
 }

@@ -49,7 +49,8 @@ footer {
   }
 }
 
-.blog {
+.blog,
+.brand-guide {
   .inner {
     @media only screen and (min-width: $screen-medium) {
       max-width: 80rem;

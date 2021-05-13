@@ -1,0 +1,67 @@
+// Accordion //
+.accordions {
+  display: flex;
+  flex-wrap: wrap;
+
+  .accordion {
+    border: $border-component-base;
+    border-radius: $border-radius-medium;
+    margin-bottom: 2.4rem;
+    padding: 1.6rem;
+    width: 100%;
+    flex: 1 0 100%;
+
+    .acrdn-head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      h5 {
+        margin: 0;
+      }
+      .acrdn-btn {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          color: $color-link-primary;
+          transform: scale(1.2, 1.2);
+          transition: 0.3s;
+        }
+        .icn-plus {
+          display: inline;
+        }
+        .icn-minus {
+          display: none;
+        }
+
+      }
+    }
+    .acrdn-body {
+      display: none;
+      opacity: 1;
+      transition: 0.3s;
+      border-top: $border-component-base;
+      margin-top: 1.6rem;
+      p {
+        font-size: 1.6rem;
+        margin: 1.6rem 0;
+      }
+    }
+  }
+}
+
+.show-acrdn {
+  .icn-plus {
+    display: none !important;
+  }
+  .icn-minus {
+    display: inline !important;
+  }
+  .acrdn-body {
+    display: block !important;
+    opacity: 0;
+  }
+}

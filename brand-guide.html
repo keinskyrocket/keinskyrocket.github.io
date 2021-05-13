@@ -31,13 +31,67 @@
     </div>
   </header>
 
-  <main>
+  <main class="brand-guide">
     <section>
       <div class="inner">
         <h1>Brand guide</h1>
         <h2>Component</h2>
+
         <h3>Accordion</h3>
+        <div class="accordions">
+          <article class="accordion">
+            <div class="acrdn-head">
+              <h5>This is my heading 1</h5>
+              <buton type="button" class="acrdn-btn">
+                <span class="icn-plus">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="icn-minus">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </buton>
+            </div>
+            <div class="acrdn-body">
+              <p>
+                My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
+              </p>
+            </div>
+          </article>
+
+          <article class="accordion">
+            <div class="acrdn-head">
+              <h5>This is my heading 2</h5>
+              <buton type="button" class="acrdn-btn">
+                <span class="icn-plus">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="icn-minus">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </buton>
+            </div>
+            <div class="acrdn-body">
+              <p>
+                My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
+              </p>
+            </div>
+          </article>
+        </div>
+
         <h3>Modal</h3>
+          <a id="btnModal" class="btn btn-outline" href="#">Sample modal</a>
+          <article class="modal">
+              <div class="mdl-container">
+                <button class="btnModalClose">
+                  <i class="fa fa-close fa-lg"></i>
+                </button>
+                <h4>Sample modal</h4>
+                <p>
+                  My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
+                </p>
+                <a class="btn btn-outline btnModalClose" href="#">Close</a>
+              </div>
+          </article>
       </div>
     </section>
   </main>
@@ -69,6 +123,9 @@
       <p class="copyright">&copy; Keisuke Tanaka. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>includeHTML();</script>
 </body>
 
 </html>
