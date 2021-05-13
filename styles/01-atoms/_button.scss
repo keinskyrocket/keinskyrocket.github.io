@@ -27,3 +27,26 @@
     }
   }
 }
+
+// Filter buttons
+.filters {
+  margin-bottom: 1.6rem;
+
+  .btn-filter {
+    background: $color-white;
+    border: 0.1rem solid $color-copy;
+    border-radius: 2rem;
+    color: $color-copy;
+    margin-right: 0.8rem;
+
+    &:hover {
+      background: $color-copy;
+      color: $color-white;
+    }
+    &.active {
+      background: $color-link-primary;
+      border: 0.1rem solid $color-link-primary;
+      color: $color-white;
+    }
+  }
+}

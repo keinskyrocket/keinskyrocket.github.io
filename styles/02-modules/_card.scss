@@ -6,6 +6,11 @@
   width: 100%;
   justify-content: space-between;
 
+  &::after {
+      content: "";
+      flex-basis: 31%;
+    
+  }
   .card {
     border: $border-component-base;
     border-radius: $border-radius-medium;
@@ -39,10 +44,6 @@
       @media only screen and (min-width: $screen-medium) {
           width: 28%
       }
-    }
-    &.--blank {
-      border: none;
-      margin: 0;
     }
   }
 }

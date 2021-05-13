@@ -333,6 +333,29 @@ code {
   color: #FFFFFF;
 }
 
+.filters {
+  margin-bottom: 1.6rem;
+}
+
+.filters .btn-filter {
+  background: #FFFFFF;
+  border: 0.1rem solid #4b555c;
+  border-radius: 2rem;
+  color: #4b555c;
+  margin-right: 0.8rem;
+}
+
+.filters .btn-filter:hover {
+  background: #4b555c;
+  color: #FFFFFF;
+}
+
+.filters .btn-filter.active {
+  background: #00afb9;
+  border: 0.1rem solid #00afb9;
+  color: #FFFFFF;
+}
+
 a {
   color: #00afb9;
 }
@@ -693,6 +716,12 @@ footer .copyright {
           justify-content: space-between;
 }
 
+.cards::after {
+  content: "";
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+}
+
 .cards .card {
   border: 0.1rem solid #e1eaec;
   border-radius: 0.4rem;
@@ -731,11 +760,6 @@ footer .copyright {
   .cards .card.col-3-dt {
     width: 28%;
   }
-}
-
-.cards .card.--blank {
-  border: none;
-  margin: 0;
 }
 
 .modal {

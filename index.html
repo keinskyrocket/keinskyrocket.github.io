@@ -25,7 +25,7 @@
           <a href="index.html"><li>Home</li></a>
           <a href="works/index.html"><li>Works</li></a>
           <a href="blog/2021-04-19_my-learning-plan.html"><li>Learning plan</li></a>
-          <a href="blog/2021-04-14_identity-values and-strength.html"><li>About</li></a>
+          <a href="blog/2021-04-14_identity-values-and-strength.html"><li>About</li></a>
         </ul>
       </nav>
     </div>
@@ -46,93 +46,13 @@
     <section>
       <div class="inner">
         <h1>What's new</h1>
+        <div class="filters">
+          Filtered by:&nbsp;
+          <button class="btn btn-filter active" type="button" data-tagname="All" onclick="myFilter(event);">All</button>
+          <button class="btn btn-filter" type="button" data-tagname="Tech" onclick="myFilter(event);">Tech</button>
+          <button class="btn btn-filter" type="button" data-tagname="Core" onclick="myFilter(event);">Core</button>
+        </div>
         <div class="cards">
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-05-07_foundations-reflection.html">Foundations reflection</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 5</span><span class="tag-post">Core</span></div>
-              <p>How has the core learning treating me so far? How will it affect to my career and my life? It's very interesting to see my own transformation within a short period of time.</p>
-              <a class="btn btn-outline" href="blog/2021-05-07_foundations-reflection.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-30_problem-solving.html">Problem solving</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 4</span><span class="tag-post">Tech</span></div>
-              <p>I looked back how I dealt with technical problems throughout challenges in Sprint 4, which showed me opportunities to improve my learning process.</p>
-              <a class="btn btn-outline" href="blog/2021-04-30_problem-solving.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-28_neuroplasticity-and-growth-mindset.html">Neuroplasticity and Growth Mindset</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 4</span><span class="tag-post">Core</span></div>
-              <p>I've never thought how much knowing how brain functions in learning would affect my study. With the power of growth mindset, I have less ambiguity around why I sometime learn more or less.</p>
-              <a class="btn btn-outline" href="blog/2021-04-28_neuroplasticity-and-growth-mindset.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-26_technical-blog-js-fundamentals.html">Technical Blog - JS Fundamentals</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 3</span><span class="tag-post">Tech</span></div>
-              <p>Not much difference between learning a new human language and a new programme language. Here is things I've learned in Sprint 3. What I believe in is Practice makes perfect!</p>
-              <a class="btn btn-outline" href="blog/2021-04-26_technical-blog-js-fundamentals.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-20_emotional-intelligence-exploration.html">Emotional intelligence exploration</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 3</span><span class="tag-post">Core</span></div>
-              <p>Developing my emotional intelligence skills brings the benefit of both my learning journey and my employability.</p>
-              <a class="btn btn-outline" href="blog/2021-04-20_emotional-intelligence-exploration.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-19_my-learning-plan.html">My learning plan</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 2</span><span class="tag-post">Core</span></div>
-              <p>Knowing how I operate myself during my learning journey helps me track my footprint. This will provide insights to determine the next step.</p>
-              <a class="btn btn-outline" href="blog/2021-04-19_my-learning-plan.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-16_what-are-the-differences-between-relative-absolute-and-fixed-positioning.html">What are the differences between relative, absolute, and fixed positioning?</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 2</span><span class="tag-post">Tech</span></div>
-              <p>Position is one of the confusing CSS properties for me. I experimented an easy comparison among relative, absolute and fixed to solidify my understanding on them. </p>
-              <a class="btn btn-outline" href="blog/2021-04-16_what-are-the-differences-between-relative-absolute-and-fixed-positioning.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-14_identity-values and-strength.html">Identity, Values and Strengths</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 1</span><span class="tag-post">Core</span></div>
-              <p>This exploration allowed me to articulate my values and ethics while I reached out my friends and interviewed their perception of my personality, strengths and limitations.</p>
-              <a class="btn btn-outline" href="blog/2021-04-14_identity-values and-strength.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb">
-            <div>
-              <h2><a class="title-link" href="blog/2021-04-13_I-cant-clone-a-repo-from-GitHub.html">Can't clone a repo from GitHub</a></h2>
-              <div class="icon tags fa-xs"><span class="tag-post">Sprint 1</span><span class="tag-post">Tech</span></div>
-              <p>I've encountered an issue with not being able to clone a repository from GitHub by using Terminal. This post shows how I troubleshooted this issue briefly.</p>
-              <a class="btn btn-outline" href="blog/2021-04-13_I-cant-clone-a-repo-from-GitHub.html">Read this blog</a>
-            </div>
-          </article>
-
-          <article class="card col-3-dt col-2-tb --blank">
-            <div>
-              &nbsp;
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -162,6 +82,7 @@
   </footer>
   <script src="../scripts/main.js"></script>
   <script>includeHTML();</script>
+  <script src="../scripts/filter.js"></script>
 </body>
 
 </html>
