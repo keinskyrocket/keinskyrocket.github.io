@@ -41,8 +41,10 @@ function includeHTML() {
       myTarget.classList.toggle("show-acrdn");
     });
   });
+}
 
-  // Modal
+// Modal
+function myModal() {
   const btnModal = document.getElementById("btnModal");
   btnModal.addEventListener("click", function() {
     const myModal = document.querySelector(".modal");

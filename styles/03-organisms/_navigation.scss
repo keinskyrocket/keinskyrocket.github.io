@@ -113,24 +113,32 @@ header {
 
 footer {
   margin-top: -2.7rem;
-  // position: absolute;
-  // bottom: 0;
-  // right: 0;
-  
-  ul {
+
+  .links-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    li {
-      padding: 0;
-      margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: $screen-small) {
+      justify-content: space-between;
     }
     .menu li {
-      margin-right: 2.4rem;
+      font-size: 1.4rem;
+      display: inline-block;
+      margin: 1.6rem;
+      line-height: 0;
+      @media screen and (min-width: $screen-small) {
+        margin: 1.6rem 2.4rem 0 0;
+      }
     }
-  }
-  .social li {
-    display: inline-block;
-    margin: 0 1.6rem;
+    .social li {
+      display: inline-block;
+      margin: 1.6rem 1.6rem 0;
+      line-height: 0;
+      @media screen and (min-width: $screen-small) {
+        margin: 0.8rem 0 0 3.2rem ;
+      }
+    }
   }
 }
