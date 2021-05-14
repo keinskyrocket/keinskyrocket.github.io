@@ -40,6 +40,27 @@ function includeHTML() {
     }
   });
 
+  // Fixed nav
+  const navbar = document.getElementById("nav");
+  const scrollTop = document.querySelector(".scroll-top");
+
+  window.addEventListener("scroll", function() {
+    const scrollHeight = window.pageYOffset;
+    const navbarHeight = navbar.getBoundingClientRect().height;
+
+    if (scrollHeight > navbarHeight - 20) {
+      navbar.classList.add("fixed-nav");
+    } else {
+      navbar.classList.remove("fixed-nav");
+    }
+
+    if (scrollHeight > 300) {
+      scrollTop.classList.add("show-scroll-top");
+    } else {
+      scrollTop.classList.remove("show-scroll-top");
+    }
+  });
+  
   // Accordion
   const btnAcrdn = document.querySelectorAll(".acrdn-btn");
   btnAcrdn.forEach(function(item) {

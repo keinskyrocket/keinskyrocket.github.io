@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Keisuke's home page</title>
-  <meta charset="UTF-8">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/prism.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://use.typekit.net/csv6eug.css">
-  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
-  <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <title>Keisuke's home page</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/prism.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/csv6eug.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+    <script src="https://kit.fontawesome.com/37a802479d.js" crossorigin="anonymous"></script>
+  </head>
 
-<body class="home">
-  <header class="bg-secondary">
-    <div class="inner">
-      <nav>
-        <ul class="label">
-          <li class="logo">
-            <a href="index.html"><img src="images/logo.png" /></a>
-          </li>
-          <li class="toggle"></li>
-        </ul>
-        <div class="menu">
-          <ul class="menu-list">
-            <a href="index.html"><li>Home</li></a>
-            <a href="works/index.html"><li>Works</li></a>
-            <a href="blog/2021-04-19_my-learning-plan.html"><li>Learning plan</li></a>
-            <a href="blog/2021-04-14_identity-values-and-strength.html"><li>About</li></a>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main class="home">
-    <section class="hero">
+  <body class="home">
+    <div id="page-top"></div>
+    <header id="nav" class="bg-secondary">
       <div class="inner">
-        <div class="col-large">
-          <div class="grid-main">
-          <p>Hello. My name is Keisuke Tanaka, and I'm a Auckland based software developer-to-be. I'll be working remotely on projects for clients all over the world.</p>
-          <p>I always encourage myself to gain a better understanding of how people think and behave so I can <span class="highlight">build better human experiences</span>.</p>
+        <nav>
+          <ul class="label">
+            <li class="logo">
+              <a href="index.html"><img src="images/logo.png" /></a>
+            </li>
+            <li class="toggle"></li>
+          </ul>
+          <div class="menu">
+            <ul class="menu-list">
+              <a href="index.html"><li>Home</li></a>
+              <a href="works/index.html"><li>Works</li></a>
+              <a href="blog/2021-04-19_my-learning-plan.html"><li>Learning plan</li></a>
+              <a href="blog/2021-04-14_identity-values-and-strength.html"><li>About</li></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="home">
+      <section class="hero">
+        <div class="inner">
+          <div class="col-large">
+            <div class="grid-main">
+            <p>Hello. My name is Keisuke Tanaka, and I'm a Auckland based software developer-to-be. I'll be working remotely on projects for clients all over the world.</p>
+            <p>I always encourage myself to gain a better understanding of how people think and behave so I can <span class="highlight">build better human experiences</span>.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="inner">
-        <h1>What's new</h1>
-        <div class="filters">
-          Filtered by:&nbsp;
-          <button class="btn btn-filter active" type="button" data-tagname="All" onclick="myFilter(event);">All</button>
-          <button class="btn btn-filter" type="button" data-tagname="Tech" onclick="myFilter(event);">Tech</button>
-          <button class="btn btn-filter" type="button" data-tagname="Core" onclick="myFilter(event);">Core</button>
+      <section>
+        <div class="inner">
+          <h1>What's new</h1>
+          <div class="filters">
+            Filtered by:&nbsp;
+            <button class="btn btn-filter active" type="button" data-tagname="All" onclick="myFilter(event);">All</button>
+            <button class="btn btn-filter" type="button" data-tagname="Tech" onclick="myFilter(event);">Tech</button>
+            <button class="btn btn-filter" type="button" data-tagname="Core" onclick="myFilter(event);">Core</button>
+          </div>
+          <div class="cards">
+          </div>
         </div>
-        <div class="cards">
+      </section>
+    </main>
+
+    <footer class="bg-tertiary">
+      <section class="bg-primary">
+        <div class="inner links-footer">
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works/index.html">Works</a></li>
+            <li><a href="blog/2021-04-19_my-learning-plan.html">Learning plan</a></li>
+            <li><a href="blog/2021-04-14_identity-values-and-strength.html">About</a></li>
+          </ul>
+          <ul class="social">
+            <li><a href="https://github.com/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-github fa-lg"></i></a></li>
+            <li><a href="https://codepen.io/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-codepen fa-lg"></i></a></li>
+            <li><a href="https://stackoverflow.com/users/15688190/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-stack-overflow fa-lg"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/tanaka-keisuke-9aa832124/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin fa-lg"></i></a></li>
+          </ul>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="bg-tertiary">
-    <section class="bg-primary">
-      <div class="inner links-footer">
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="works/index.html">Works</a></li>
-          <li><a href="blog/2021-04-19_my-learning-plan.html">Learning plan</a></li>
-          <li><a href="blog/2021-04-14_identity-values-and-strength.html">About</a></li>
-        </ul>
-        <ul class="social">
-          <li><a href="https://github.com/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-github fa-lg"></i></a></li>
-          <li><a href="https://codepen.io/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-codepen fa-lg"></i></a></li>
-          <li><a href="https://stackoverflow.com/users/15688190/keinskyrocket" target="_blank" rel="noreferrer noopener"><i class="fab fa-stack-overflow fa-lg"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/tanaka-keisuke-9aa832124/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin fa-lg"></i></a></li>
-        </ul>
+      <div class="inner center">
+        <p class="copyright">&copy; Keisuke Tanaka. All rights reserved.</p>
       </div>
-    </section>
+    </footer>
 
-    <div class="inner center">
-      <p class="copyright">&copy; Keisuke Tanaka. All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="../scripts/main.js"></script>
-  <script>includeHTML();</script>
-  <script src="../scripts/filter.js"></script>
-</body>
+    <a href="#page-top" class="scroll-top"></a>
+    <script src="../scripts/main.js"></script>
+    <script>includeHTML();</script>
+    <script src="../scripts/filter.js"></script>
+  </body>
 
 </html>
