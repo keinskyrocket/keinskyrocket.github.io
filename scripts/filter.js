@@ -97,14 +97,6 @@ filterBtns.forEach(function(myBtn) {
     } else {
       displayContents(findMyCategory);
     }
-
-    // const filterActive = myEvtFilter.currentTarget.classList
-    // if (filterActive !== "active") {
-    //   filterActive.add("active");
-    // } else {
-    //   filterActive.remove("active");
-    // }
-    
   });
 });
 

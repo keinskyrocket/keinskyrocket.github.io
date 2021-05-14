@@ -50,10 +50,8 @@ header {
       overflow: hidden;
       height: 0;
 
-      &.show-all {
-        display: inline-block;
-        height: 21rem;
-        margin-top: 1.6rem;
+      @media screen and (min-width: $screen-small) {
+        height: auto !important;
       }
 
       a {
@@ -63,13 +61,22 @@ header {
         padding: 1.6rem;
         text-decoration: none;
 
-        &:last-child {
-          border-bottom: 1px solid $color-brand-20;
+        &:first-child {
+          border-top: 0;
+          margin-top: 0.8rem;
+
+          @media screen and (min-width: $screen-small) {
+            margin-top: 0;
+          }
         }
         &:hover {
           background: $color-link-primary-hover;
           color: $color-white;
           transition: 0.3s;
+
+          @media screen and (min-width: $screen-small) {
+            background: inherit;
+          }
         }
 
         li {

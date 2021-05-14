@@ -28,9 +28,16 @@ function includeHTML() {
   // Nav toggle
   const myToggle = document.querySelector(".toggle");
   const myMenu = document.querySelector(".menu");
+  const myMenuList = document.querySelector(".menu-list");
 
   myToggle.addEventListener("click", function () {
-    myMenu.classList.toggle("show-all");
+    const myMenuHeight = myMenu.getBoundingClientRect().height;
+    const myMenuListHeight = myMenuList.getBoundingClientRect().height;
+    if (myMenuHeight === 0) {
+      myMenu.style.height = `${myMenuListHeight}px`;
+    } else {
+      myMenu.style.height = 0;
+    }
   });
 
   // Accordion

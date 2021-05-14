@@ -898,10 +898,10 @@ header nav .menu {
   height: 0;
 }
 
-header nav .menu.show-all {
-  display: inline-block;
-  height: 21rem;
-  margin-top: 1.6rem;
+@media screen and (min-width: 768px) {
+  header nav .menu {
+    height: auto !important;
+  }
 }
 
 header nav .menu a {
@@ -912,8 +912,15 @@ header nav .menu a {
   text-decoration: none;
 }
 
-header nav .menu a:last-child {
-  border-bottom: 1px solid #c1e6ea;
+header nav .menu a:first-child {
+  border-top: 0;
+  margin-top: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  header nav .menu a:first-child {
+    margin-top: 0;
+  }
 }
 
 header nav .menu a:hover {
@@ -921,6 +928,12 @@ header nav .menu a:hover {
   color: #FFFFFF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  header nav .menu a:hover {
+    background: inherit;
+  }
 }
 
 header nav .menu a li::after {
