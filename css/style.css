@@ -395,15 +395,20 @@ a:active {
   color: #00afb9;
 }
 
-.tab {
-  overflow: hidden;
+.tab .tab-btns {
   border-bottom: 2px solid #00afb9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 4.8rem 0 -4.8rem;
 }
 
-.tab button {
+.tab .tab-btns .tab-link {
   background-color: #e7f5f7;
-  float: left;
   border: none;
   color: #4b555c;
   outline: none;
@@ -416,14 +421,26 @@ a:active {
   margin-right: 0.4rem;
 }
 
-.tab button:hover {
+.tab .tab-btns .tab-link:hover {
   background-color: #006a6f;
   color: #FFFFFF;
 }
 
-.tab button.active {
+.tab .tab-btns .tab-link.active {
   background-color: #00afb9;
   color: #FFFFFF;
+}
+
+.tab .tab-container {
+  display: none;
+}
+
+.tab .tab-container.active {
+  display: block;
+}
+
+.tab .tab-container h5 {
+  margin-top: 7.2rem;
 }
 
 .members {

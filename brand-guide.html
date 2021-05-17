@@ -13,7 +13,7 @@
 
 <body class="home">
   <div id="page-top"></div>
-  <header class="bg-secondary">
+  <header id="nav" class="bg-secondary">
     <div class="inner">
       <nav>
         <ul class="label">
@@ -82,19 +82,48 @@
         </div>
 
         <h3>Modal</h3>
-          <a id="btnModal" class="btn btn-outline" href="#" onClick="myModal();">Sample modal</a>
-          <article class="modal">
-              <div class="mdl-container">
-                <button class="btnModalClose">
-                  <i class="fa fa-close fa-lg"></i>
-                </button>
-                <h4>Sample modal</h4>
-                <p>
-                  My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
-                </p>
-                <a class="btn btn-outline btnModalClose" href="#">Close</a>
-              </div>
-          </article>
+        <a id="btnModal" class="btn btn-outline" href="#" onClick="myModal();">Sample modal</a>
+        <article class="modal">
+            <div class="mdl-container">
+              <button class="btnModalClose">
+                <i class="fa fa-close fa-lg"></i>
+              </button>
+              <h4>Sample modal</h4>
+              <p>
+                My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
+              </p>
+              <a class="btn btn-outline btnModalClose" href="#">Close</a>
+            </div>
+        </article>
+
+        <h3>Tab</h3>
+        <article class="tab">
+          <div class="tab-btns">
+            <button class="tab-link active" data-tabname="tab1">Tab 1</button>
+            <button class="tab-link" data-tabname="tab2">Tab 2</button>
+            <button class="tab-link" data-tabname="tab3">Tab 3</button>
+          </div>
+          <div class="tab-contents">
+            <div class="tab-container active" id="tab1">
+              <h5>Mt title 1</h5>
+              <p>
+                My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
+              </p>
+            </div>
+            <div class="tab-container" id="tab2">
+              <h5>Mt title 2</h5>
+              <p>
+                My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
+              </p>
+            </div>
+            <div class="tab-container" id="tab3">
+              <h5>Mt title 3</h5>
+              <p>
+                My dummy text comes here and there and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   </main>
