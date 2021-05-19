@@ -1,0 +1,56 @@
+.container {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 300px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  margin: 8px;
+  text-align: center;
+}
+
+#calc-screen {
+  background: #000000;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: 8px;
+  text-align: right;
+  padding: 16px;
+}
+
+.keys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.keys button {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px 8px;
+  margin: 8px 8px;
+  cursor: pointer;
+}
+
+.keys button:hover {
+  background: #CCCCCC;
+}
+
+.keys button:nth-child(17) {
+  width: 127px;
+}
