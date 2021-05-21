@@ -13,13 +13,14 @@ for (let i = 0; i < myCells.length; i++) {
   const myImg = document.createElement("img");
   myImg.src = "whack-a-mole/mole.PNG"; 
   myImg.style.visibility = "hidden";
+  myImg.classList.add("mole-cell");
   myCells[i].appendChild(myImg);
 }
 
 function gameStart() {
   var myShuffle = setInterval(function(){   
     const pickOne = Math.floor(Math.random() * 25);
-    const myVisibility = document.querySelectorAll("img");
+    const myVisibility = document.querySelectorAll(".mole-cell");
     myVisibility[pickOne].style.visibility = "visible";
     var pp = setTimeout(function hideMe() {
       myVisibility[pickOne].style.visibility = "hidden";
